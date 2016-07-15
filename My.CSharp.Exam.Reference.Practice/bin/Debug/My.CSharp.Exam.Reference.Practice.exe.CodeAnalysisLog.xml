@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\bin\Debug\My.CSharp.Exam.Reference.Practice.exe">
+   <Modules>
+    <Module Name="my.csharp.exam.reference.practice.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'My.CSharp.Exam.Reference.Practice.exe' with a strong name key.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'My.CSharp.Exam.Reference.Practice.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="My.CSharp.Exam.Reference.Practice">
+       <Types>
+        <Type Name="AsyncAwaitTutorial" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SleepAsyncA(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="AsyncAwaitTutorial.cs" Line="25">Method 'AsyncAwaitTutorial.SleepAsyncA(int)' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SleepAsyncB(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="AsyncAwaitTutorial.cs" Line="33">In method 'AsyncAwaitTutorial.SleepAsyncB(int)', call System.IDisposable.Dispose on object 't' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="AsyncAwaitTutorial.cs" Line="31">Method 'AsyncAwaitTutorial.SleepAsyncB(int)' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ParallelClassTutorial" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'ParallelClassTutorial' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#TestParalleFor()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ParallelClassTutorial.cs" Line="25">Method 'ParallelClassTutorial.TestParalleFor()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestParalleForeach()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ParallelClassTutorial.cs" Line="34">Method 'ParallelClassTutorial.TestParalleForeach()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestParallelBreak()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ParallelClassTutorial.cs" Line="57">Method 'ParallelClassTutorial.TestParallelBreak()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Breaking loop".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ParallelClassTutorial.cs" Line="52">Method 'ParallelClassTutorial.TestParallelBreak()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+            <Message Id="result" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ParallelClassTutorial.cs" Line="53">'ParallelClassTutorial.TestParallelBreak()' declares a variable, 'result', of type 'ParallelLoopResult', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PLINQTutorial" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'PLINQTutorial' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#MeasurePerformanceOfAboveMethodsAgainstEachOther()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="45">Method 'PLINQTutorial.MeasurePerformanceOfAboveMethodsAgainstEachOther()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Elapsed time for parallel run: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="55">Method 'PLINQTutorial.MeasurePerformanceOfAboveMethodsAgainstEachOther()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Elapsed time for serial run: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="36">Method 'PLINQTutorial.MeasurePerformanceOfAboveMethodsAgainstEachOther()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+            <Message Id="parallelResult" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="41">'PLINQTutorial.MeasurePerformanceOfAboveMethodsAgainstEachOther()' declares a variable, 'parallelResult', of type 'int[]', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="result" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="51">'PLINQTutorial.MeasurePerformanceOfAboveMethodsAgainstEachOther()' declares a variable, 'result', of type 'int[]', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestAggregateException()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="90">Method 'PLINQTutorial.TestAggregateException()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="99">Method 'PLINQTutorial.TestAggregateException()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "There were {0} exceptions".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestAsOrderdLinqMethod()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="60">Method 'PLINQTutorial.TestAsOrderdLinqMethod()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestAsParallelLinqMethod()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="14">Method 'PLINQTutorial.TestAsParallelLinqMethod()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestAsSequentialMethod()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="71">Method 'PLINQTutorial.TestAsSequentialMethod()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestForAllMethod()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="82">Method 'PLINQTutorial.TestForAllMethod()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestWithoutParallelismLinqMethod()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="PLINQTutorial.cs" Line="25">Method 'PLINQTutorial.TestWithoutParallelismLinqMethod()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Main(System.String[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="result" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="Program.cs" Line="31">'Program.Main(string[])' declares a variable, 'result', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="t1" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="Program.cs" Line="32">'Program.Main(string[])' declares a variable, 't1', of type 'Task', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="t2" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="Program.cs" Line="33">'Program.Main(string[])' declares a variable, 't2', of type 'Task', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="Program.cs" Line="12">Parameter 'args' of 'Program.Main(string[])' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TaskTutorial" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#TestAttachingChildTask()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="110">In method 'TaskTutorial.TestAttachingChildTask()', call System.IDisposable.Dispose on object 'new Task(new Action(CS$&lt;&gt;8__locals19, TestAttachingChildTask), TaskCreationOptions.AttachedToParent)' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="111">In method 'TaskTutorial.TestAttachingChildTask()', call System.IDisposable.Dispose on object 'new Task(new Action(CS$&lt;&gt;8__locals19, TestAttachingChildTask), TaskCreationOptions.AttachedToParent)' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="112">In method 'TaskTutorial.TestAttachingChildTask()', call System.IDisposable.Dispose on object 'new Task(new Action(CS$&lt;&gt;8__locals19, TestAttachingChildTask), TaskCreationOptions.AttachedToParent)' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="106">Method 'TaskTutorial.TestAttachingChildTask()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestCreateTask()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.Write(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="31">Method 'TaskTutorial.TestCreateTask()' passes a literal string as parameter 'value' of a call to 'Console.Write(string)'. Retrieve the following string(s) from a resource table instead: "*".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="26">Method 'TaskTutorial.TestCreateTask()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestSchedulingDifferentContinuationTask()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="83">Method 'TaskTutorial.TestSchedulingDifferentContinuationTask()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Cancled".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="93">Method 'TaskTutorial.TestSchedulingDifferentContinuationTask()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Completed".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="88">Method 'TaskTutorial.TestSchedulingDifferentContinuationTask()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Faulted".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="75">Method 'TaskTutorial.TestSchedulingDifferentContinuationTask()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+            <Message Id="Cancled" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="83">Correct the spelling of the unrecognized token 'Cancled' in the literal '"Cancled"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestTaskContinuation()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="57">Method 'TaskTutorial.TestTaskContinuation()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestTaskFactory()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="135">Method 'TaskTutorial.TestTaskFactory()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestTaskReturningValue()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="42">Method 'TaskTutorial.TestTaskReturningValue()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestWaitAll()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="174">Method 'TaskTutorial.TestWaitAll()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "1".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="181">Method 'TaskTutorial.TestWaitAll()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "2".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="188">Method 'TaskTutorial.TestWaitAll()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "3".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="168">Method 'TaskTutorial.TestWaitAll()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestWaitAny()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="TaskTutorial.cs" Line="204">Method 'TaskTutorial.TestWaitAny()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ThreadTutorial" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BackgroundThreadMethod()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="50">Method 'ThreadTutorial.BackgroundThreadMethod()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Thread proc: {0}".</Issue>
+            </Message>
+            <Message Id="proc" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="50">Correct the spelling of the unrecognized token 'proc' in the literal '"Thread proc: {0}"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateThread()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="10">Method 'ThreadTutorial.CreateThread()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="13">Method 'ThreadTutorial.CreateThread()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Thread proc:{0}".</Issue>
+            </Message>
+            <Message Id="proc" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="13">Correct the spelling of the unrecognized token 'proc' in the literal '"Thread proc:{0}"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ParameterizedThreadStart(System.Object)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="72">Method 'ThreadTutorial.ParameterizedThreadStart(object)' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Thread proc: {0}".</Issue>
+            </Message>
+            <Message Id="proc" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="72">Correct the spelling of the unrecognized token 'proc' in the literal '"Thread proc: {0}"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestBackgroundThreadMethod()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="57">Method 'ThreadTutorial.TestBackgroundThreadMethod()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestCreateThread()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="37">Method 'ThreadTutorial.TestCreateThread()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Main thread: Do some work".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="32">Method 'ThreadTutorial.TestCreateThread()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestParameterizedThreadStart()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="80">Method 'ThreadTutorial.TestParameterizedThreadStart()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestQueuingWorkToThreadPool()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="199">Method 'ThreadTutorial.TestQueuingWorkToThreadPool()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Working on a thread from thread pool.".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="196">Method 'ThreadTutorial.TestQueuingWorkToThreadPool()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestStoppingThread()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="114">Method 'ThreadTutorial.TestStoppingThread()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Press any key to exit.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="108">Method 'ThreadTutorial.TestStoppingThread()' passes a literal string as parameter 'value' of a call to 'Console.WriteLine(string)'. Retrieve the following string(s) from a resource table instead: "Running...".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="101">Method 'ThreadTutorial.TestStoppingThread()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestThreadLocalClass()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="167">Method 'ThreadTutorial.TestThreadLocalClass()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="172">Method 'ThreadTutorial.TestThreadLocalClass()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Thread A: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="180">Method 'ThreadTutorial.TestThreadLocalClass()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Thread B: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TestThreadStaticAttribute()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-22 05:36:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="134">Method 'ThreadTutorial.TestThreadStaticAttribute()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Method: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="140">Method 'ThreadTutorial.TestThreadStaticAttribute()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Thread A: {0}".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice" File="ThreadTutorial.cs" Line="149">Method 'ThreadTutorial.TestThreadStaticAttribute()' passes a literal string as parameter 'format' of a call to 'Console.WriteLine(string, object)'. Retrieve the following string(s) from a resource table instead: "Thread B: {0}".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Avoid uninstantiated internal classes</Name>
+   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
+   <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182265.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

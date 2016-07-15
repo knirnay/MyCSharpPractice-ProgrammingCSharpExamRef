@@ -1,0 +1,11 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\bin\Debug\My.CSharp.Exam.Reference.Practice.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\bin\Debug\My.CSharp.Exam.Reference.Practice.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\bin\Debug\My.CSharp.Exam.Reference.Practice.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\obj\Debug\My.CSharp.Exam.Reference.Practice.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\obj\Debug\My.CSharp.Exam.Reference.Practice.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\obj\Debug\My.CSharp.Exam.Reference.Practice.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\bin\Debug\My.CSharp.Exam.Reference.Practice.exe.CodeAnalysisLog.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\bin\Debug\My.CSharp.Exam.Reference.Practice.exe.lastcodeanalysissucceeded
+C:\Git\MyCSharpPractice\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\bin\Debug\My.CSharp.Exam.Reference.Practice.exe.config
+C:\Git\MyCSharpPractice\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\obj\Debug\My.CSharp.Exam.Reference.Practice.exe
+C:\Git\MyCSharpPractice\ProgrammingCSharpExamRef\My.CSharp.Exam.Reference.Practice\obj\Debug\My.CSharp.Exam.Reference.Practice.pdb

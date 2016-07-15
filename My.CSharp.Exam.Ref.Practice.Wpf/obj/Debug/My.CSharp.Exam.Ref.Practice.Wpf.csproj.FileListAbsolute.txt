@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\bin\Debug\My.CSharp.Exam.Ref.Practice.Wpf.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\bin\Debug\My.CSharp.Exam.Ref.Practice.Wpf.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\bin\Debug\My.CSharp.Exam.Ref.Practice.Wpf.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\My.CSharp.Exam.Ref.Practice.Wpf.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\App.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\My.CSharp.Exam.Ref.Practice.Wpf_MarkupCompile.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\My.CSharp.Exam.Ref.Practice.Wpf.g.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\My.CSharp.Exam.Ref.Practice.Wpf.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\My.CSharp.Exam.Ref.Practice.Wpf.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\My.CSharp.Exam.Ref.Practice.Wpf.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ConsoleApplications\ProgrammingCSharpExamRef\My.CSharp.Exam.Ref.Practice.Wpf\obj\Debug\My.CSharp.Exam.Ref.Practice.Wpf.pdb
