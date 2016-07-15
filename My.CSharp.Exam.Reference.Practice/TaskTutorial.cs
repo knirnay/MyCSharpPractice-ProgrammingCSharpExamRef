@@ -11,15 +11,15 @@ namespace My.CSharp.Exam.Reference.Practice
     {
         /// <summary>
         /// Queuing a work item to a thread pool can be useful, but it has its shortcomings. 
-        /// There is no built in way to  now when the operation has  nished and what the return value is.
+        /// There is no built in way to  now when the operation has  finished and what the return value is.
         /// This is why the .NET Framework introduces the concept of a Task, which is an object that represents some work that should be done. 
         /// The Task can tell you if the work is completed and if the operation returns a result, the Task gives you the result. 
         /// A task scheduler is responsible for starting the Task and managing it. By default, the Task scheduler uses threads from the thread pool to execute the Task. 
-        /// Tasks can be used to make your application more responsive. If the thread that manages the user interface off loads work to another thread  from the thread pool, 
+        /// Tasks can be used to make your application more responsive. If the thread that manages the user interface offloads work to another thread  from the thread pool, 
         /// it can  keep processing user events and ensure that the application can still be used. But it doesn’t help with scalability. 
         /// If a thread receives a web request and it would start a new Task, 
         /// it would just consume another thread from the thread pool while the original thread waits for results.
-        /// Executing a Task on another thread makes sense only if you want to keep the user interface thread free for other work or if you want to parallelize your work on to multiple processors.
+        /// Executing a Task on another thread makes sense only if you want to keep the user interface thread free for other work or if you want to parallelize your work onto multiple processors.
         /// </summary>
         public static void TestCreateTask()
         {
@@ -49,7 +49,7 @@ namespace My.CSharp.Exam.Reference.Practice
         }
 
         /// <summary>
-        /// Beause of the object-oriented nature of the Task object, one thing you can do is add a continuation task.
+        /// Because of the object-oriented nature of the Task object, one thing you can do is add a continuation task.
         /// This means that you want another operation to execute as soon as the Task finishes.
         /// </summary>
         public static void TestTaskContinuation()
@@ -66,7 +66,7 @@ namespace My.CSharp.Exam.Reference.Practice
         }
 
         ///<summary>
-        /// The ContinueWith menthod has a couple of overloads that you can use to configure when the continuation will run.
+        /// The ContinueWith method has a couple of overloads that you can use to configure when the continuation will run.
         /// This way you can add different continuation will run when an exception happens, the Task is canceled, or the Task
         /// completes successfully.
         /// </summary>
@@ -126,7 +126,7 @@ namespace My.CSharp.Exam.Reference.Practice
         }
 
         /// <summary>
-        /// In previous example, you had to create three Tasks with the same options. To make the process
+        /// In the previous example, you had to create three Tasks with the same options. To make the process
         /// easier, you can use a TaskFactory. A TaskFactory is created with a certain configuration and can then
         /// be used to create tasks with that configuration.
         /// </summary>
@@ -161,7 +161,7 @@ namespace My.CSharp.Exam.Reference.Practice
         /// In this case, all three Tasks are executed simultaneously, and the whole run takes approximately 1000ms 
         /// instead of 3000ms.
         /// 
-        /// Next to wait all is WhenAll method that you can use to schedule a continuation method after all Tasks have finished.
+        /// Next to WaitAll is a WhenAll method that you can use to schedule a continuation method after all Tasks have finished.
         /// </summary>
         public static void TestWaitAll()
         {
@@ -193,11 +193,11 @@ namespace My.CSharp.Exam.Reference.Practice
         }
 
         /// <summary>
-        /// Instead of watiting untill all tasks are finished, you can also wait until one of the tasks is finished.
+        /// Instead of waiting until all tasks are finished, you can also wait until one of the tasks is finished.
         /// In this example, you process a completed Task as soon as it finishes. By keeping track of which Tasks are 
         /// finished, you don't have to wait until all Tasks have completed.
         /// 
-        /// WaitAny function returns index from array of Task of the completed task.
+        /// WaitAny function returns index from an array of Task of the completed task.
         /// </summary>
         public static void TestWaitAny()
         {

@@ -1,4 +1,4 @@
-﻿/* The System.Threading.Task namespace also contains another class that can be usded for parallel processing.
+﻿/* The System.Threading.Task namespace also contains another class that can be used for parallel processing.
  * The Parallel class has a couple of static methods - For, ForEach and Invoke that you can use to parallelize work.
  * 
  * Parallelism involves taking a certain task and splitting it into a set of related tasks that can be executed concurrently.
@@ -14,7 +14,6 @@ namespace My.CSharp.Exam.Reference.Practice
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
 

@@ -11,7 +11,7 @@
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Thread proc:{0}", i);
-                //// Why the Thread.Sleep(0)? It is used to signal to Windows that this thread is  nished. 
+                //// Why the Thread.Sleep(0)? It is used to signal to Windows that this thread is  finished. 
                 //// In- stead of waiting for the whole time-slice of the thread to finish, 
                 //// it will immediately switch to another thread.
                 Thread.Sleep(0);
@@ -20,11 +20,11 @@
 
         /// <summary>
         /// The Thread class can be found in the System.Threading namespace. This class enables you to 
-        /// create new treads, manage their priority, and get their status. 
-        /// The Thread class isn’t something that you should use in your applications, except when you have special needs. However, when using the Thread class you have control over all con gura- tion options. You can, for example, specify the priority of your thread, tell Windows that your thread is long running, or con gure other advanced options.
-        /// Listing 1-1 shows an example of using the Thread class to run a method on another thread. The Console class synchronizes the use of the output stream for you so you can write to it from multiple threads. Synchronization is the mechanism of ensuring that two threads don’t execute a speci c portion of your program at the same time. In the case of a console appli- cation, this means that no two threads can write data to the screen at the exact same time. 
+        /// create new threads, manage their priority, and get their status. 
+        /// The Thread class isn’t something that you should use in your applications, except when you have special needs. However, when using the Thread class you have control over all configuration options. You can, for example, specify the priority of your thread, tell Windows that your thread is long running, or configure other advanced options.
+        /// Listing 1-1 shows an example of using the Thread class to run a method on another thread. The Console class synchronizes the use of the output stream for you so you can write to it from multiple threads. Synchronization is the mechanism of ensuring that two threads don’t execute a specific portion of your program at the same time. In the case of a console application, this means that no two threads can write data to the screen at the exact same time. 
         /// If one thread is working with the output stream, other threads will have to wait before it’s finished. 
-        /// Both your process and your thread have a priority. Assigning a low priority is useful for applications such as a screen saver. Such an application shouldn’t compete with other applica- tions for CPU time. A higher-priority thread should be used only when it’s absolutely neces- sary. A new thread is assigned a priority of Normal, which is okay for almost all scenarios. 
+        /// Both your process and your thread have a priority. Assigning a low priority is useful for applications such as a screen saver. Such an application shouldn’t compete with other applications for CPU time. A higher-priority thread should be used only when it’s absolutely necessary. A new thread is assigned a priority of Normal, which is okay for almost all scenarios. 
         /// Another thing that’s important to know about threads is the difference between fore- ground and background threads. Foreground threads can be used to keep an application alive. Only when all foreground threads end does the common language runtime (CLR) shut down your application. Background threads are then terminated.
         /// </summary>
         public static void TestCreateThread()
@@ -122,11 +122,11 @@
 
         /// <summary>
         /// A thread has its own call stack that stores all the methods that are executed. 
-        /// Local vari- ables are stored on the call stack and are private to the thread.
+        /// Local variables are stored on the call stack and are private to the thread.
         /// A thread can also have its own data that’s not a local variable. 
-        /// By marking a  eld with the ThreadStatic attribute, each thread gets its own copy of a field 
+        /// By marking a  field with the ThreadStatic attribute, each thread gets its own copy of a field 
         /// 
-        /// With the ThreadStaticAttribute applied, the maximum value of _ eld becomes 10. If you remove it, 
+        /// With the ThreadStaticAttribute applied, the maximum value of field becomes 10. If you remove it, 
         /// you can see that both threads access the same value and it becomes 20
         /// </summary>
         public static void TestThreadStaticAttribute()
