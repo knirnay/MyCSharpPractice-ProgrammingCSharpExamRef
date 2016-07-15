@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.CSharp.Exam.Reference.Practice", "My.CSharp.Exam.Reference.Practice\My.CSharp.Exam.Reference.Practice.csproj", "{38E4D05B-B855-4790-B315-A6E6A1F4A1B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.CSharp.Exam.Ref.Practice.Wpf", "My.CSharp.Exam.Ref.Practice.Wpf\My.CSharp.Exam.Ref.Practice.Wpf.csproj", "{A7B81F03-A531-43D2-826C-B3C1B07FFA9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E4D05B-B855-4790-B315-A6E6A1F4A1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E4D05B-B855-4790-B315-A6E6A1F4A1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E4D05B-B855-4790-B315-A6E6A1F4A1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E4D05B-B855-4790-B315-A6E6A1F4A1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B81F03-A531-43D2-826C-B3C1B07FFA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B81F03-A531-43D2-826C-B3C1B07FFA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B81F03-A531-43D2-826C-B3C1B07FFA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B81F03-A531-43D2-826C-B3C1B07FFA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
